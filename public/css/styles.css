@@ -29,9 +29,6 @@
     max-width: 250px;
  }
  
- .search-bar {
-    
- }
  
  .searcher i{
     border-radius: 3px;
@@ -99,10 +96,13 @@
     display: block;
  }
  
- .card:hover i {
-    transform: rotateX(90deg);
-    z-index: 0;
- }
+ article i {
+   transition: 0.5s;
+}
+
+article:hover i {
+   transform: rotate(-90deg);
+}
  
  main section article div i {
     display: block;
