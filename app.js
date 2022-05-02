@@ -9,7 +9,7 @@ const publicPath = path.resolve(__dirname, './public') ;
 //informamos a la aplicacion app.js que queremos hacer uso de unos archivos estáticos
 app.use(express.static(publicPath));
 // se genera, con el método LISTEN, la apertura del servidor indicando el pueto y opcinalmente un mensaje indicador.
-const puerto = 3000;    //Es buena práctica definir el pueto y en el mensaje de la apretura agregar el nombre del puerto
+const puerto = process.env.PORT || 3000;    //Es buena práctica definir el pueto y en el mensaje de la apretura agregar el nombre del puerto
 app.listen(puerto,()=>console.log('Levantando un servidor con Express en el puerto ' + puerto));
 
 //llamo al archivo html para verlo desded el puerto 
@@ -17,7 +17,7 @@ app.get('/',(req,res) => {
     res.sendFile(path.resolve(__dirname,'./views/home.html'))
 });
 
-//llamo al archivo html para verlo desded el puerto 
+//llamo al archivo html para verlo desde el puerto 
 app.get('/register',(req,res) => {
     res.sendFile(path.resolve(__dirname,'./views/register.html'))
 });
