@@ -1,0 +1,322 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+ }
+ 
+ /*establezco en body*/
+ body {
+    background-color: #ebebeb;
+ }
+ /* -----------todo respecto al header ---------------*/
+ header{
+    background-color: #EAC926;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+ }
+ 
+ .container-sup{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+ }
+ 
+ .logo_mercado_liebre {
+    width: 44%;
+    max-width: 250px;
+ }
+ 
+ .search-bar {
+    
+ }
+ 
+ .searcher i{
+    border-radius: 3px;
+ }
+ 
+ .tipo_de_pago{
+    font-size: 14px;
+    width: 100%;
+    margin: 10px 0px;
+    text-align: center;
+    max-width: 300px;
+ }
+ 
+ .container-menu{
+    padding: 0% 4%;
+ }
+ .pruductos_navbar,
+ .user_navbar{
+    display:none;
+    list-style: none;
+ }
+ 
+ /*saco el punto a una lista*/
+ nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 8px;
+ }
+ 
+ .hamburguer {
+    margin: 20px auto;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background-color: #03264C;
+    width: 50px;
+    padding: 10px;
+    border-radius: 5px;
+ }
+ /*------------  Banner entre en header y el main  ---------*/
+ .banner{
+    width: 100%;
+    margin: auto;
+ }
+ /*---------- Comienza el main ----------*/
+ main{
+    width: 90%;
+    margin: auto;
+ }
+ section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+ }
+ 
+ article{
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+ }
+ 
+ .card{
+    display: block;
+ }
+ 
+ .card:hover i {
+    transform: rotateX(90deg);
+    z-index: 0;
+ }
+ 
+ main section article div i {
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    top: -30px;
+ }
+ 
+ .imagenes_productos{
+    width: 100%;
+ }
+ 
+ .descripcionGeneralArticulo{
+    border-top : 1px solid #ebebeb;
+    padding: 2px;
+ }
+ 
+ 
+ .cuerpo_texto{
+    font-size: 12px;
+ }
+ 
+ .titulares {
+    font-size: 24px;
+    color: #666;
+    margin: 1em;
+ }
+ 
+ .precios_descuentos{
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+ }
+ 
+ .precios_descuentos > p{
+    display: flex;
+ }
+ 
+ 
+ .precios {
+    font-size: 18px;
+    flex-grow: 0.3;
+    
+ }
+ 
+ .descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    font-weight: bolder;
+    flex-grow: 0.7;
+ }
+ 
+ .descripciones {
+    font-size: 16px;
+    display: none;
+ }
+ 
+ /*---------- Comienza el Footer ---------*/
+ footer {
+    text-align: center;
+    background-color: white;
+    padding: 1em;
+    color: #666;
+ }
+ 
+ .icon {
+    font-size: 2em;
+    margin-bottom: 60px;
+ }
+ 
+ .icon i {
+    color: #03264C;
+    margin-bottom: 10px;
+    
+ }
+ 
+ .footer_titulo{
+    font-size: 16px;
+    font-weight: bolder;
+    padding-left: 10%;
+    padding-right: 10%;
+ 
+ }
+ 
+ .footer_contenido{
+    font-size: 12px;
+    padding-left: 10%;
+    padding-right: 10%;
+ }
+ 
+ 
+ .copyright{
+    text-align: left;
+ }
+ 
+ 
+ /*---------- Media Queries ----------*/
+ /*para tablets*/
+ @media (min-width: 360px){
+    article{
+       box-shadow: 0px 0px 10px rgb(100,100,100);
+       width: 44%;
+    }
+    .descripciones{
+       display: block;
+       visibility: hidden;
+    }
+    p:hover .descripciones {
+     font-size: 50px;
+    }
+ 
+ }
+ /*para desktops*/
+ @media (min-width: 769px){
+    article{
+       width: 22%;
+    }
+ 
+    .container-menu nav{
+       display: flex;
+       justify-content: space-between;
+    }
+    .user_navbar,
+    .pruductos_navbar{
+       display: flex;
+ 
+    }
+    .hamburguer{
+       display: none;
+    }
+    .footer {
+       display: flex;
+       color: #39b54a;
+    }
+    .footer i {
+       color: #39b54a;
+    }
+    
+ }
+ 
+ /*formulario de registro*/
+ .Form-Registro input {
+    border-radius: 5px;
+    margin: 1% 0%;
+    padding: 1%;
+ }
+ .perfil  {
+    margin: 1% 0%;
+ 
+ }
+ .interes  {
+    margin: 1% 0%;
+ }
+ 
+ 
+ .Form-Registro h2 {
+    color: #03264C;
+    margin: 2%;
+ }
+ .Form-Registro button {
+    background-color: #ebebeb;
+    font-size: 25px;
+    border-radius: 8px;
+    color: black;
+    padding: 5%;
+ 
+ }
+ .botones {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+ 
+ }
+ .Form-Registro button:hover {
+    background-color: #03264C;
+    color: #fff;
+ }
+ /*formulario de login*/
+ .Form-login {
+    margin: 1% 0%;
+    text-align: center;
+ }
+ .usuario {
+    margin: 1% 0%;
+ }
+ .contraseña {
+    margin: 1% 0%;
+ }
+ 
+ .Form-login input {
+    border-radius: 5%;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 0.2%;
+    text-align: center;
+ }
+ 
+ .Form-login button {
+    background-color: #ebebeb;
+    font-size: 18px;
+    border-radius: 5px;
+    color: black;
+    padding: 0.5% 3% 0.5% 3%;
+    margin: 3%;
+ }
+ .enviar-login:hover {
+    background-color: #0022AA;
+ }
