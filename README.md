@@ -1,2 +1,2 @@
 # MaketPlace
-PRimera entrega de curso desarrollo web fullstack en Digital House
+Primera entrega de curso desarrollo web fullstack en Digital House
